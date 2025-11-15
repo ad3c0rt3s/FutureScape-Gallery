@@ -1,0 +1,77 @@
+/* Styling for Example Paintings Section */
+
+.example-paintings {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.painting-item img {
+    width: 100px;
+    height: 150px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.painting-item img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Gallery Header */
+.gallery-header {
+    color: #00E59B;
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 1em;
+}
+
+/* Art Gallery Layout */
+.art-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.art-piece {
+    background-color: #333;
+    border: 2px solid #00E59B;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 0 10px #00E59B;
+    transition: transform 0.3s ease;
+}
+
+.art-piece:hover {
+    transform: scale(1.05);
+}
+
+/* Explore Button */
+.explore-button {
+    padding: 8px 20px;
+    background-color: #00E59B;
+    color: black;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.explore-button:hover {
+    background-color: #00c082;
+}
+
+/* Art gallery Main Artworks */
+.painting-item {
+    width: 289px;
+    height: 372px;
+    object-fit: cover; /* Keeps proportions while filling the box */
+    border-radius: 8px;
+  }
+  
