@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FutureScape Art Gallery</title>
+    <link rel="stylesheet" href="style.css"> <!-- Main style -->
+    <link rel="stylesheet" href="PrincipalStyle.css"> <!-- Art gallery-specific styles -->
+</head>
+<body>
+    <div id="starfield"></div>
+    <div class="content">
+        <h1>
+            <span class="Welcome-text">Welcome to FutureScape</span>
+            <span class="divider-line"></span>
+            <span class="studio-text">Art Gallery & Studio</span>       
+        </h1>
+        <p>Explore the mysteries of art, AI, science, and the beauty of nature.</p>
+        <button class="button-90s" onclick="showCategories()">Start</button> <!-- Correctly formatted Start button -->
+    </div>
+
+    <!-- Category Section (Initially hidden) -->
+    <div id="categories" class="hidden">
+        <h2>Explore Categories</h2>
+        <ul>
+            <li><button class="button-90s" onclick="showCategory('art-gallery-section')">Art Gallery</button></li>
+            <li><button class="button-90s" onclick="showCategory('futurescape-worlds')">FutureScape Worlds</button></li>
+            <li><button class="button-90s" onclick="showCategory('exclusive-collections')">Exclusive Collections</button></li>
+        </ul>
+    </div>
+
+    <!-- Individual Category Descriptions (Initially hidden) -->
+    <div id="art-gallery-section" class="category-description hidden">
+        <h2>Art Gallery</h2>
+        <p>Welcome to our digital art space. Here, you'll find diverse artworks from surrealism to modern minimalism.</p>
+        <button class="button-90s" onclick="exploreGallery()">Explore</button>
+    </div>
+       
+    <!-- Art Gallery Section (Initially hidden) -->    
+<div id="art-gallery" class="category-description hidden">
+    <!-- Example Paintings for the Welcome Section -->
+
+    <header class="gallery-header">
+        Welcome to FutureScape Art Gallery
+    </header>
+    
+    <main class="art-gallery">
+        <!-- Art pieces as listed -->
+        <div class="art-piece">
+            <h2 class="art-title">Artificial Happiness</h2>
+            <p class="art-description">A journey into the surreal blend of AI and human emotions, exploring the limits of happiness in digital form.</p>
+            <button class="explore-button">View More</button>
+        </div>
+    </main>
+
+    <main class="art-gallery">
+        <div class="art-piece">
+            <h2 class="art-title">UNDERSIDE</h2>
+            <p class="art-description">Arte en Movimiento</p>
+            <button class="explore-button">View More</button>
+        </div>
+    </main>
+    
+    </div>
+        <!-- Additional artworks here -->
+</div>
+
+    <div id="futurescape-worlds" class="category-description hidden">
+        <h3>FutureScape Worlds</h3>
+        <p>Immerse yourself in futuristic, themed worlds. Step into Natureverse, a world where the organic meets the digital.</p>
+        <p>THIS PAGE IS STILL IN CONSTRUCTION</p>
+    </div>
+
+    <div id="exclusive-collections" class="category-description hidden">
+        <h3>Exclusive Collections</h3>
+        <p>Unlock rare and limited-edition digital art pieces in our exclusive collections. Own a part of the future with NFTs.</p>
+    </div>
+    
+    <script src="JavaScript.js"></script> <!-- JavaScript file -->
+</body>
+</html>
